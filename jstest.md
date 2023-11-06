@@ -16,8 +16,7 @@ This page is for testing embedded JavaScript
     })
     .then(resp => resp.json())
     .then(json => {
-        var render = JSON.parse(json)
-        document.getElementById('demo').innerHTML = render.Description;
+        document.getElementById('demo').innerHTML = json.Description;
         });
 
 </script>
