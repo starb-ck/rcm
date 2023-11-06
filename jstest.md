@@ -18,7 +18,7 @@ permalink: /jstest/
     fileid = ""
 
     function updateDisplayedFile(fileid) {
-        fetch('https://api.airtable.com/v0/appoMmtp6PrLl2ykz/EntityRecords/' + fileid, {
+        fetch('https://api.airtable.com/v0/appoMmtp6PrLl2ykz/EntityRecords/' + fileid.trim(), {
             headers: {Authorization: 'Bearer patCJRVWZh4svbaze.2dafd7f4bc8a2341936747c7dafb1e36ec3a2149397dd9f3aeabfcf5a6726d0e'}
             })
         .then(resp => resp.json())
@@ -39,9 +39,9 @@ permalink: /jstest/
         var liststring = ""
 
         for (let i = 0; i < json.records.length; i++) {
-            id_string = json.records[i].id.toString().trim()
+            id_string = json.records[i].id.toString()
             console.log(id_string)
-            liststring += ('<p onclick="updateDisplayedFile("'+id_string+'")">' + id_string + '</p>')
+            liststring += ('<p onclick="updateDisplayedFile("'+ id_string +'")">' + id_string + '</p>')
         }
 
         document.getElementById('list').innerHTML = liststring
