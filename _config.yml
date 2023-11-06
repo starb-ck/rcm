@@ -1,0 +1,18 @@
+title: 'starbuck-on-air.github.io'
+description: "Personal GitHub Pages site."
+baseurl: "/"
+url: "https://starbuck-on-air.github.io"
+
+header_pages:
+  - index.md
+  - peter.md
+  - about.md
+  - contact.md
+
+style: dark
+
+footer: 'Using b2a3e8's console theme.'
+
+# Build settings
+markdown: kramdown
+remote_theme: b2a3e8/jekyll-theme-console
