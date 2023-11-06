@@ -1,7 +1,7 @@
 ---
 title: /jstest
-layout: default
-permalink: jstest/
+layout: page
+permalink: /jstest/
 ---
 
 # js-test
