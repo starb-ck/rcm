@@ -40,6 +40,7 @@ permalink: /jstest/
 
         for (let i = 0; i < json.records.length; i++) {
             id_string = json.records[i].id.toString().trim()
+            console.log(id_string)
             liststring += ('<p onclick="updateDisplayedFile("'+ id_string +'")">' + id_string + '</p>')
         }
 
