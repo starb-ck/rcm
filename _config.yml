@@ -11,7 +11,7 @@ header_pages:
 
 style: dark
 
-footer: "We'll put something here... eventually."
+footer: "Made with love."
 
 # Build settings
 markdown: kramdown

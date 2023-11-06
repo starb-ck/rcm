@@ -34,7 +34,7 @@ Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoologic
         });
     }
 
-    fetch('https://api.airtable.com/v0/appoMmtp6PrLl2ykz/EntityRecords', {
+    fetch('https://api.airtable.com/v0/appoMmtp6PrLl2ykz/EntityRecords?fields%5B%5D=ID&fields%5B%5D=Name&sort%5B0%5D%5Bfield%5D=ID&sort%5B0%5D%5Bdirection%5D=asc', {
     headers: {Authorization: 'Bearer patCJRVWZh4svbaze.2dafd7f4bc8a2341936747c7dafb1e36ec3a2149397dd9f3aeabfcf5a6726d0e'}
     })
     .then(resp => resp.json())
