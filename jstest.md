@@ -18,8 +18,8 @@ This page is for testing embedded JavaScript
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
-        document.getElementById('name').innerHTML = json.id.Name;
-        document.getElementById("description").innerHTML = json.id.Description
+        document.getElementById('name').innerHTML = json.fields.Name;
+        document.getElementById("description").innerHTML = json.fields.Description
         });
 
 </script>
