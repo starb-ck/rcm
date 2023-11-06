@@ -48,8 +48,6 @@ permalink: /jstest/
         document.getElementById('list').innerHTML = liststring
     })
 
-    updateDisplayedFile("recN9KaBLTbxccBnf")
-
     </script>
 
 
