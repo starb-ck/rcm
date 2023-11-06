@@ -37,7 +37,6 @@ permalink: /jstest/
         var liststring = ""
 
         for (let i = 0; i < json.records.length; i++) {
-            <element onclick="updateDisplayedFile()">Click</element>
             liststring += ('"<button onclick="updateDisplayedFile('+ json.records[i].id +')">' + json.records[i].id + '</button>"')
         }
 
