@@ -33,7 +33,7 @@ This page is for testing embedded JavaScript
         console.log(json)
         var image_url = json.fields.Image[0].url
         document.getElementById('name').innerHTML = json.fields.Name;
-        document.getElementById('image').innerHTML = <img src=image_url alt="alternative-text">
+        document.getElementById('image').innerHTML = '<img src="' + image_url + '"alt="alternative-text"/>'
         document.getElementById("description").innerHTML = json.fields.Description
         });
 
