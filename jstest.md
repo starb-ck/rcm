@@ -15,7 +15,10 @@ This website is for testing embedded JavaScript
     headers: {Authorization: 'Bearer patCJRVWZh4svbaze.2dafd7f4bc8a2341936747c7dafb1e36ec3a2149397dd9f3aeabfcf5a6726d0e'}
     })
     .then(resp => resp.json())
-    .then(json => jsonObj = JSON.parse(json));
+    .then(json => jsonObj = JSON.stringify(json));
+
+    console.log(typeof resp)
+    console.log(typeof jsonObj);
 
     document.getElementById("demo").innerHTML = jsonObj.Description
 </script>
