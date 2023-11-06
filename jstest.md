@@ -9,6 +9,8 @@ permalink: /jstest/
 This website is for testing embedded JavaScript
 
 <script>
-    let d = new Date();
-    alert("Today's date is " + d);
+    fetch('https://reqbin.com/echo/get/json')
+   .then(response => response.text())
+   .then(text => console.log(text));
 </script>
+
