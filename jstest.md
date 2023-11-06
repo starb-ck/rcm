@@ -6,7 +6,7 @@ permalink: /jstest/
 
 # js-test
 
-This website is for testing embedded JavaScript
+This page is for testing embedded JavaScript
 
 <p id="demo"></p>
 
@@ -19,7 +19,7 @@ This website is for testing embedded JavaScript
 
     console.log(typeof jsonObj);
 
-    document.getElementById("demo").innerHTML = JSON.parse(jsonObj).Description
-    
+    document.getElementById("demo").innerHTML = await JSON.parse(jsonObj).Description
+
 </script>
 
