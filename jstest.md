@@ -11,12 +11,10 @@ This website is for testing embedded JavaScript
 <p id="demo"></p>
 
 <script>
-    fetch('https://ubahthebuilder.tech/posts/1')
-    .then(data => {
-    return data.json();
+    fetch('https://reqbin.com/echo/get/json', {
+    headers: {Authorization: 'Bearer {token}'}
     })
-    .then(post => {
-    console.log(post.title);
-    });
+    .then(resp => resp.json())
+    .then(json => console.log(JSON.stringify(json)))
 </script>
 
