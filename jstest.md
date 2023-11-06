@@ -4,11 +4,15 @@ layout: page
 permalink: /jstest/
 ---
 
-# ENTITY DIRECTORY:
+# SPOOKI Database
+
+Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoological Investigations online database. Entities listed below have been declassified for public release.   
+
+## ENTITY DIRECTORY:
 
 <p id="list"></p>
 
-# BEGIN FILE:
+# SELECTED CASE FILE:
 
 <p id="name"></p>
 <p id="image"></p>
