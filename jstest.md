@@ -9,8 +9,6 @@ permalink: /jstest/
 This website is for testing embedded JavaScript
 
 <script>
-    fetch('https://reqbin.com/echo/get/json')
-   .then(response => response.text())
-   .then(text => console.log(text));
+    document.getElementById("demo").innerHTML = 5 + 6;
 </script>
 
