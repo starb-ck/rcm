@@ -4,7 +4,7 @@ layout: page
 permalink: /jstest/
 ---
 
-# ENTITY DIRECTORY
+# ENTITY DIRECTORY:
 
 <p id="list"></p>
 
@@ -33,7 +33,7 @@ permalink: /jstest/
         console.log(json)
         var image_url = json.fields.Image[0].thumbnails.large.url
         document.getElementById('name').innerHTML = json.fields.Name;
-        document.getElementById('image').innerHTML = '<img src="' + image_url + '"alt="alternative-text" width="' + window.innerwidth + '"/>'
+        document.getElementById('image').innerHTML = '<img src="' + image_url + '"alt="alternative-text" width="' + window.screen.width + '"/>'
         document.getElementById("description").innerHTML = json.fields.Description
         });
 
