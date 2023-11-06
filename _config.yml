@@ -11,7 +11,7 @@ header_pages:
 
 style: dark
 
-footer: "Follow me on [github](https://github.com/starbuck-on-air)."
+footer: "Follow me on <a href="https://github.com/starbuck-on-air">github</a>."
 
 # Build settings
 markdown: kramdown
