@@ -24,7 +24,7 @@ permalink: /jstest/
         var liststring = ""
 
         for (let i = 0; i < json.records.length; i++) {
-            liststring += ("ID: " + json[i].id + " ")
+            liststring += ("ID: " + json.records[i].id + " ")
         }
 
         document.getElementById('list').innerHTML = liststring
