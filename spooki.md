@@ -52,6 +52,8 @@ Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoologic
         document.getElementById('list').innerHTML = liststring
     })
 
+    updateDisplayedFile("recJwGUIrZbA7r3C1")
+
     </script>
 
 
