@@ -6,7 +6,7 @@ url: "https://starbuck-on-air.github.io"
 header_pages:
   - index.md
   - about.md
-  - jstest.md
+  - sppoki.md
   - projects.md
 
 style: dark
