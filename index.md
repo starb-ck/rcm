@@ -4,6 +4,6 @@ layout: home
 permalink: /
 ---
 
-# starbuck-on-air
+# Welcome
 
-This is the personal website for [starbuck-on-air](https://github.com/starbuck-on-air). 
+This is the personal website for [inkcartrich](https://github.com/inkcartrich). 
