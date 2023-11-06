@@ -44,7 +44,7 @@ Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoologic
 
         for (let i = 0; i < json.records.length; i++) {
             id_string = json.records[i].id.toString().trim()
-            directory_string = id_string + " - " + json.records[i].fields.ID + ": " + json.records[i].fields.Name
+            directory_string = json.records[i].fields.ID + ": " + json.records[i].fields.Name
             console.log(id_string)
             liststring += ('<a href="javascript:;" onclick="updateDisplayedFile(\'' + id_string + '\')">' + directory_string + '</a>\n')
         }
