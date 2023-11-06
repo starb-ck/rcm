@@ -11,6 +11,7 @@ This page is for testing embedded JavaScript
 <p id="list"></p>
 
 <p id="name"></p>
+<p id="image"></p>
 <p id="description"></p>
 
 <script>
@@ -30,7 +31,9 @@ This page is for testing embedded JavaScript
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
+        var image_url = json.fields.Image.0.url
         document.getElementById('name').innerHTML = json.fields.Name;
+        document.getElementById('image').innerHTML = <img src=image_url alt="alternative-text">
         document.getElementById("description").innerHTML = json.fields.Description
         });
 
