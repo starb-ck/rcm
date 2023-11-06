@@ -11,6 +11,12 @@ This website is for testing embedded JavaScript
 <p id="demo"></p>
 
 <script>
-    document.getElementById("demo").innerHTML = 5 + 6;
+    async function logMovies() {
+    const response = await fetch("http://example.com/movies.json");
+    const movies = await response.json();
+    console.log(movies);
+    }
+
+    document.getElementById("demo").innerHTML = movies;
 </script>
 
