@@ -4,11 +4,11 @@ layout: page
 permalink: /jstest/
 ---
 
-# js-test
-
-This page is for testing embedded JavaScript
+# ENTITY DIRECTORY
 
 <p id="list"></p>
+
+# BEGIN FILE:
 
 <p id="name"></p>
 <p id="image"></p>
@@ -31,7 +31,7 @@ This page is for testing embedded JavaScript
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
-        var image_url = json.fields.Image[0].url
+        var image_url = json.fields.Image[0].thumbnails.large.url
         document.getElementById('name').innerHTML = json.fields.Name;
         document.getElementById('image').innerHTML = '<img src="' + image_url + '"alt="alternative-text"/>'
         document.getElementById("description").innerHTML = json.fields.Description
