@@ -1,7 +1,7 @@
 ---
-title: /jstest
+title: /spookiDB
 layout: page
-permalink: /jstest/
+permalink: /spooki/
 ---
 
 # SPOOKI Database
