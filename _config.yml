@@ -11,7 +11,7 @@ header_pages:
 
 style: dark
 
-footer: 'Using b2a3e8's console theme.'
+footer: "Using b2a3e8's console theme."
 
 # Build settings
 markdown: kramdown
