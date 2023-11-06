@@ -7,7 +7,7 @@ categories:
 
 # Hello world!
 
-This is the first post on the new [site](/). It now uses Jekyll and is hosted on GitHub pages.
+This is the first post on the new [site](https://calcifer.cloud/). It now uses Jekyll and is hosted on GitHub pages.
 
 It also supports syntax highlighting:
 
