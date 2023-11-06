@@ -17,9 +17,9 @@ This website is for testing embedded JavaScript
     .then(resp => resp.json())
     .then(json => JSON.stringify(json));
 
-    console.log(typeof resp)
     console.log(typeof jsonObj);
 
-    document.getElementById("demo").innerHTML = jsonObj.Description
+    document.getElementById("demo").innerHTML = JSON.parse(jsonObj).Description
+    
 </script>
 
