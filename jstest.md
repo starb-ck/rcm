@@ -8,7 +8,8 @@ permalink: /jstest/
 
 This page is for testing embedded JavaScript
 
-<p id="demo"></p>
+<p id="name"></p>
+<p id="description"></p>
 
 <script>
     fetch('https://api.airtable.com/v0/appoMmtp6PrLl2ykz/EntityRecords/recN9KaBLTbxccBnf', {
@@ -17,7 +18,8 @@ This page is for testing embedded JavaScript
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
-        document.getElementById('demo').innerHTML = json["id"];
+        document.getElementById('name').innerHTML = json.id.Name;
+        document.getElementById("description").innerHTML = json.id.Description
         });
 
 </script>
