@@ -8,8 +8,9 @@ permalink: /jstest/
 
 This website is for testing embedded JavaScript
 
+<p id="demo"></p>
+
 <script>
     document.getElementById("demo").innerHTML = 5 + 6;
 </script>
 
-<p id="demo"></p>
