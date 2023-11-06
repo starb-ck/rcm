@@ -15,3 +15,8 @@ footer: "We'll put something here... eventually."
 # Build settings
 markdown: kramdown
 remote_theme: b2a3e8/jekyll-theme-console
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
