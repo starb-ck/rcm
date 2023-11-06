@@ -37,7 +37,8 @@ permalink: /jstest/
         var liststring = ""
 
         for (let i = 0; i < json.records.length; i++) {
-            liststring += ('<p onclick="updateDisplayedFile('+ String(json.records[i].id) +')">' + json.records[i].id + '</p>\n')
+            id_string = json.records[i].id.toString()
+            liststring += ('<p onclick="updateDisplayedFile('+ id_string +')">' + id_string + '</p>\n')
         }
 
         document.getElementById('list').innerHTML = liststring
