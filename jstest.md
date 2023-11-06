@@ -42,7 +42,7 @@ permalink: /jstest/
             id_string = json.records[i].id.toString().trim()
             directory_string = id_string + " - " + json.records[i].fields.ID + ": " + json.records[i].fields.Name
             console.log(id_string)
-            liststring += ('<a href="javascript:;" onclick="updateDisplayedFile(\'' + id_string + '\')">' + id_string + '</a>\n')
+            liststring += ('<a href="javascript:;" onclick="updateDisplayedFile(\'' + id_string + '\')">' + directory_string + '</a>\n')
         }
 
         document.getElementById('list').innerHTML = liststring
