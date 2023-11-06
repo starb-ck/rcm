@@ -1,12 +1,12 @@
 ---
-title: /spookiDB
+title: /spooki
 layout: page
 permalink: /spooki/
 ---
 
 # SPOOKI Database
 
-Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoological Investigations online database. Entities listed below have been declassified for public release.   
+Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoological Investigations (SPOOKI) online database. Entities listed below have been declassified for public release.
 
 ## ENTITY DIRECTORY:
 
