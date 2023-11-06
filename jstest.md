@@ -21,6 +21,7 @@ permalink: /jstest/
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
+        var liststring = ""
 
         for (let i = 0; i < json.records.length; i++) {
             liststring += ("ID: " + json[i].id + " ")
