@@ -19,7 +19,7 @@ This page is for testing embedded JavaScript
 
     console.log(typeof jsonObj);
 
-    document.getElementById("demo").innerHTML = await JSON.parse(jsonObj).Description
+    document.getElementById("demo").innerHTML = JSON.stringify(jsonObj)
 
 </script>
 
