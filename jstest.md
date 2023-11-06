@@ -21,6 +21,12 @@ permalink: /jstest/
     .then(resp => resp.json())
     .then(json => {
         console.log(json)
+
+        for (let i = 0; i < json.records.length; i++) {
+            liststring += ("ID: " + json[i].id + " ")
+        }
+
+        document.getElementById('list').innerHTML = liststring
     })
     </script>
 
@@ -30,7 +36,6 @@ permalink: /jstest/
     })
     .then(resp => resp.json())
     .then(json => {
-        console.log(json)
         var image_url = json.fields.Image[0].thumbnails.large.url
         document.getElementById('name').innerHTML = json.fields.Name;
         document.getElementById('image').innerHTML = '<img src="' + image_url + '"alt="alternative-text" width="' + window.screen.height/3 + '"/>'
