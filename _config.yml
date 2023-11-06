@@ -16,6 +16,8 @@ footer: "We'll put something here... eventually."
 markdown: kramdown
 remote_theme: b2a3e8/jekyll-theme-console
 
+google_analytics: G-WLW268MS29
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
