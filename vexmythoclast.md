@@ -120,7 +120,7 @@ Here's what the pseudo-code looks like for the Bungie API call. It's a lot more 
 The next challenge was to create a DockerFile and image a container, which was a brand new challenge for me. But I pushed forward and found a helpfule online resource to create my container structure around. Here's the DockerFile text for it:
 
 
-{% highlight %}
+{% highlight r %}
 
     # Base image https://hub.docker.com/u/rocker/
     FROM rocker/tidyverse
