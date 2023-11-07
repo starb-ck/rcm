@@ -9,7 +9,7 @@ permalink: /vex/
 
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
 
-    *Forward: This analysis was originally published to Reddit r/DestinyTheGame in September of 2021 and received over 3.2K upvotes and 40+ awards. When I originally wrote it, I was still very early in my data engineering career - as such, there are a few methodology mistakes and it's probably the most over-engineered solution I've ever made. That being said, it was a still fun hacky project and so I've preserved it here.*
+*Forward: This analysis was originally published to Reddit r/DestinyTheGame in September of 2021 and received over 3.2K upvotes and 40+ awards. When I originally wrote it, I was still very early in my data engineering career - as such, there are a few methodology mistakes and it's probably the most over-engineered solution I've ever made. That being said, it was a still fun hacky project and so I've preserved it here.*
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
 
