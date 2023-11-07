@@ -7,7 +7,7 @@ permalink: /vexmythoclast/
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
 
 
-![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="50%"}
+![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="75%"}
 
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
@@ -154,11 +154,11 @@ The only unfortunate inefficiency here was that I ended up having to manually ad
 
 Here's what my Docker Desktop looked like for about 36 hours:
 
-![Docker Desktop](assets/vexmythoclast/dockerdesktop.png){:width="50%"}
+![Docker Desktop](assets/vexmythoclast/dockerdesktop.png){:width="75%"}
 
 And here's one of the workers chugging away (usernames have been scrubbed for privacy):
 
-![Output from Destiny worker 8](assets/vexmythoclast/outputfromdestinyworker8.png){:width="50%"}
+![Output from Destiny worker 8](assets/vexmythoclast/outputfromdestinyworker8.png){:width="75%"}
 
 One of the nice things about Docker is that the containers mount your hard drive folders as a clone of folders inside the container. This means that you can start running analysis on the data even as it's still in-the-air and updating every few rows. So even before I'd finished the data request, I was already analyzing the incoming Vex Mythoclast data and building my visualizations - including this report!
 
@@ -213,7 +213,7 @@ Next, let's take a look at a histogram of the responses with fill color correspo
 
 {% endhighlight %}
 
-![User VoG Clears Histogram](assets/vexmythoclast/uservogclearshisto.png){:width="50%"}
+![User VoG Clears Histogram](assets/vexmythoclast/uservogclearshisto.png){:width="75%"}
 
 Hmm... it's a little hard to see what's going on as the number of VoG clears increases. Let's adjust the histogram position to 'fill':
 
@@ -227,7 +227,7 @@ Hmm... it's a little hard to see what's going on as the number of VoG clears inc
 {% endhighlight %}
 
 
-![User VoG Clears Histogram Fill](assets/vexmythoclast/uservogclearshistofill.png){:width="50%"}
+![User VoG Clears Histogram Fill](assets/vexmythoclast/uservogclearshistofill.png){:width="75%"}
 
 
 That's a bit better. What's interesting is that we seem to see a smooth increase in Vex possession up until around 100 VoG clears, and then the possession rate varies wildly. Let's look a little closer at this by calculating the percentage of Vex possession for a scatter plot against VoG clears:
@@ -248,7 +248,7 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
 {% endhighlight %}
 
 
-![User VoG Clears Scatter](assets/vexmythoclast/uservogclearsscatter.png){:width="50%"}
+![User VoG Clears Scatter](assets/vexmythoclast/uservogclearsscatter.png){:width="75%"}
 
 
 
@@ -323,7 +323,7 @@ Now we get to do some cool stuff by using our model to create a set of Vex Mytho
 
 {% endhighlight %}
 
-![User VoG Clears Model](assets/vexmythoclast/uservogclearsmodel.png){:width="50%"}
+![User VoG Clears Model](assets/vexmythoclast/uservogclearsmodel.png){:width="75%"}
 
 
 This plot shows us the predicted percentage of Vex Mythoclast ownership in the population by the number of a user's VoG clears. Even better, we can ask the model for its prediciton for a player who's completed VoG once by going to the end of the table:
@@ -340,7 +340,7 @@ Which reveals that our model predicts that a single completion of Vault of Glass
 
 Now that we have our model and have thoroughly inspected the Vex Mythoclast dataset, lets finish off by creating a fun ggplot visualization combining what we generated today.
 
-![Vex Possession by VoG Clears](assets/vexmythoclast/vexpossessionbyvogclears.png){:width="50%"}
+![Vex Possession by VoG Clears](assets/vexmythoclast/vexpossessionbyvogclears.png){:width="75%"}
 
 We'll save this plot and use it to post on the subreddit!
 
