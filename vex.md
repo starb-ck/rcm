@@ -7,7 +7,7 @@ permalink: /vex/
 ![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="100%"}
 
 
-# The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
+# The Legendary Vex Mythoclast
 
 *Forward: This analysis was originally published to Reddit r/DestinyTheGame in September of 2021 and received over 3.2K upvotes and 40+ awards. When I originally wrote it, I was still very early in my data engineering career - as such, there are a few methodology mistakes and it's probably the most over-engineered solution I've ever made. That being said, it was a still fun hacky project and so I've preserved it here.*
 
@@ -356,4 +356,4 @@ Unfortunately, there's not a whole lot we can do to resolve this without obtaini
 
 ## Conclusion
 
-We conlcude that the likelihood of obtaining Vex Mythoclast per run of Vault of Glass is approximately 4.290%, with the caveat that this determination is likely under-representative of the player population which allows for public queries of their character inventory. Therefore we suspect the actual value of the Vex Mythoclast drop rate is likely closer to 5%.
+We conclude that the likelihood of obtaining Vex Mythoclast per run of Vault of Glass is approximately 4.290%, with the caveat that this determination is likely under-representative of the player population which allows for public queries of their character inventory. Therefore we suspect the actual value of the Vex Mythoclast drop rate is likely closer to 5%.
