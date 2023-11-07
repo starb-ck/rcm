@@ -7,6 +7,7 @@ header_pages:
   - index.md
   - about.md
   - spooki.md
+  - vexmythoclast.md
   - projects.md
 
 style: dark
