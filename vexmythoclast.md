@@ -6,7 +6,7 @@ permalink: /vexmythoclast/
 
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
 
-![The Legendary Vex Mythoclast](https://drive.google.com/file/d/1XKLK4D7YJqL5qKXRweCxH2BlzPgrY_S2/view?usp=sharing)
+![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg)
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
 
@@ -86,9 +86,9 @@ Some of the sharp-eyed among you may notice that certain information is redacted
 
 Now that we have obtained our dataset of users and the number of times that a user has completed Vault of Glass, it's time to do some digging. We're going to access the [Bungie.net API](https://github.com/Bungie-net/api) in order to determine whether a particular player owns Vex Mythoclast. This is actually going to be done in two steps:
 
-    1. Search a player's username and identify their Member ID - a primary key used to identify their Destiny profile.
+1. Search a player's username and identify their Member ID - a primary key used to identify their Destiny profile.
 
-    2. Query with the Member ID to return that player's Destiny characters and ask for their inventories as a component of the GET request.
+2. Query with the Member ID to return that player's Destiny characters and ask for their inventories as a component of the GET request.
 
 Once we obtian the inventories for each player, it's pretty easy to check if they possess Vex Mythoclast. With a little navigating around the API, we can find that the item hash of Vex Mythoclast is **4289226715**. Think of this as a code that tells the Destiny application which item to use anytime an instance of that item is generated in the game. Even though every Destiny character has a unique inventory, every instance should tie back to an original item definition. So we just have to identify if the Vex Mythoclast hash is contained anywhere within any player's characters' inventories.
 
