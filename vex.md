@@ -9,7 +9,7 @@ permalink: /vex/
 
 # The Legendary Vex Mythoclast
 
-*Forward: This analysis was originally published to Reddit r/DestinyTheGame in September of 2021 and received over 3.2K upvotes and 40+ awards. When I originally wrote it, I was still very early in my data engineering career - as such, there are a few methodology mistakes and it's probably the most over-engineered solution I've ever made. That being said, it was a still fun hacky project and so I've preserved it here.*
+*This analysis was originally published to Reddit r/DestinyTheGame in September of 2021 and received over 3.2K upvotes and 40+ awards. When I originally wrote it, I was still very early in my data engineering career - as such, there are a few methodology mistakes and it's probably the most over-engineered solution I've ever made. That being said, it was a still fun hacky project and so I've preserved it here for posterity.*
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
 
@@ -132,7 +132,7 @@ The next challenge was to create a DockerFile and image a container, which was a
 
     # Base image https://hub.docker.com/u/rocker/
     FROM rocker/tidyverse
-
+    
     ## create directories
     RUN mkdir -p /01_data
     RUN mkdir -p /02_code
@@ -182,16 +182,6 @@ Here's the last bit of code to get us our completed dataset:
     for (i in 1:length(f)){
     output_combined <- rbind(output_combined, f[[i]])
     }
-
-    head(output_combined)
-
-    ##   X n   user_name user_vog_clears does_user_have_vex
-    ## 1 1 3   Ninjah720            1508               TRUE
-    ## 2 2 3 KING_ANUBIX            1331               TRUE
-    ## 3 3 3  xSwerve_88            1190               TRUE
-    ## 4 4 3    jollys79             979               TRUE
-    ## 5 5 3 Alan Sparks             977              FALSE
-    ## 6 6 3    C_J_Mack             967              FALSE
 
 {% endhighlight %}
 
@@ -279,25 +269,6 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
                     span = 0.75,
                     weights[output_limited$user_vog_clears, ]$n
                     )
-
-    ## Call:
-    ## loess(formula = avg_drop ~ user_vog_clears, data = output_limited, 
-    ##     weights = weights[output_limited$user_vog_clears, ]$n, span = 0.75, 
-    ##     degree = 2)
-    ## 
-    ## Number of Observations: 233 
-    ## Equivalent Number of Parameters: 4.42 
-    ## Residual Standard Error: 0.886 
-    ## Trace of smoother matrix: 4.82  (exact)
-    ## 
-    ## Control settings:
-    ##   span     :  0.75 
-    ##   degree   :  2 
-    ##   family   :  gaussian
-    ##   surface  :  interpolate      cell = 0.2
-    ##   normalize:  TRUE
-    ##  parametric:  FALSE
-    ## drop.square:  FALSE
 
     summary(logit_model)
 
