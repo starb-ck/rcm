@@ -6,7 +6,9 @@ permalink: /vexmythoclast/
 
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
 
+
 ![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="50%"}
+
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
 
@@ -66,19 +68,20 @@ Our first step is similar to **u/TBEMystify**'s method in that we will be access
         results_master <- rbind(results_master, results_add_page
     }
 
-head(results_master)
+    head(results_master)
 
-    ## # A tibble: 6 x 2
-    ##   vog_username   vog_count
-    ##   <chr>          <chr>    
-    ## 1 Ninjah720      1508     
-    ## 2 KING_ANUBIX    1331     
-    ## 3 hallowdragonxx 1313     
-    ## 4 xSwerve_88     1190     
-    ## 5 jollys79       979      
-    ## 6 Alan Sparks    977
+        ## # A tibble: 6 x 2
+        ##   vog_username   vog_count
+        ##   <chr>          <chr>    
+        ## 1 Ninjah720      1508     
+        ## 2 KING_ANUBIX    1331     
+        ## 3 hallowdragonxx 1313     
+        ## 4 xSwerve_88     1190     
+        ## 5 jollys79       979      
+        ## 6 Alan Sparks    977
 
 {% endhighlight %}
+
 
 I have to hand it to **Ninjah720** for completing VoG a whopping *1508* times. That's crazy. And props to the others in this list as well - that's an impressive commitment.
 
@@ -118,10 +121,11 @@ Here's what the pseudo-code looks like for the Bungie API call. It's a lot more 
 {% endhighlight %}
 
 
+
 The next challenge was to create a DockerFile and image a container, which was a brand new challenge for me. But I pushed forward and found a helpfule online resource to create my container structure around. Here's the DockerFile text for it:
 
 
-{% highlight r %}
+{% highlight python %}
 
     # Base image https://hub.docker.com/u/rocker/
     FROM rocker/tidyverse
@@ -145,14 +149,16 @@ The next challenge was to create a DockerFile and image a container, which was a
 {% endhighlight %}
 
 
+
 The only unfortunate inefficiency here was that I ended up having to manually adjust `lower_limit` and `upper_limit` for each instance of the script I wanted to create, which was a little tedious. If anyone knows how to pass input values from the host system into a container during its initial spin-up, let me know - I haven't quite gotten that figured out. Still, a few minutes of set-up sets us up with eight `destiny/worker` containers, happily spinning away and scarping.
 
 Here's what my Docker Desktop looked like for about 36 hours:
 
+![Docker Desktop](assets/vexmythoclast/dockerdesktop.png){:width="50%"}
 
 And here's one of the workers chugging away (usernames have been scrubbed for privacy):
 
-
+![Output from Destiny worker 8](assets/vexmythoclast/outputfromdestinyworker8.png){:width="50%"}
 
 One of the nice things about Docker is that the containers mount your hard drive folders as a clone of folders inside the container. This means that you can start running analysis on the data even as it's still in-the-air and updating every few rows. So even before I'd finished the data request, I was already analyzing the incoming Vex Mythoclast data and building my visualizations - including this report!
 
@@ -190,7 +196,7 @@ Here's the last bit of code to get us our completed dataset:
 
 First, let's take a look at the response volume by the number of VoG clears:
 
-
+![Response volume](assets/vexmythoclast/uservogclears.png){:width="50%"}
 
 I adjusted the axes here to limit us between 0 and 300 VoG clears. Even though the higher outliers are impressive, these limits seem more interesting to me to analyze.
 
@@ -207,6 +213,7 @@ Next, let's take a look at a histogram of the responses with fill color correspo
 
 {% endhighlight %}
 
+![User VoG Clears Histogram](assets/vexmythoclast/uservogclearshisto.png){:width="50%"}
 
 Hmm... it's a little hard to see what's going on as the number of VoG clears increases. Let's adjust the histogram position to 'fill':
 
@@ -218,6 +225,9 @@ Hmm... it's a little hard to see what's going on as the number of VoG clears inc
     scale_x_continuous(limits = c(0, 300))
 
 {% endhighlight %}
+
+
+![User VoG Clears Histogram Fill](assets/vexmythoclast/uservogclearshistofill.png){:width="50%"}
 
 
 That's a bit better. What's interesting is that we seem to see a smooth increase in Vex possession up until around 100 VoG clears, and then the possession rate varies wildly. Let's look a little closer at this by calculating the percentage of Vex possession for a scatter plot against VoG clears:
@@ -237,6 +247,8 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
 
 {% endhighlight %}
 
+
+![User VoG Clears Scatter](assets/vexmythoclast/uservogclearsscatter.png){:width="50%"}
 
 
 
@@ -311,7 +323,7 @@ Now we get to do some cool stuff by using our model to create a set of Vex Mytho
 
 {% endhighlight %}
 
-
+![User VoG Clears Model](assets/vexmythoclast/uservogclearsmodel.png){:width="50%"}
 
 
 This plot shows us the predicted percentage of Vex Mythoclast ownership in the population by the number of a user's VoG clears. Even better, we can ask the model for its prediciton for a player who's completed VoG once by going to the end of the table:
@@ -328,7 +340,7 @@ Which reveals that our model predicts that a single completion of Vault of Glass
 
 Now that we have our model and have thoroughly inspected the Vex Mythoclast dataset, lets finish off by creating a fun ggplot visualization combining what we generated today.
 
-
+![Vex Possession by VoG Clears](assets/vexmythoclast/vexpossessionbyvogclears.png){:width="50%"}
 
 We'll save this plot and use it to post on the subreddit!
 
