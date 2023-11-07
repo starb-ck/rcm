@@ -6,6 +6,7 @@ permalink: /vexmythoclast/
 
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
 
+![The Legendary Vex Mythoclast](https://drive.google.com/file/d/1XKLK4D7YJqL5qKXRweCxH2BlzPgrY_S2/view?usp=sharing)
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
 
@@ -284,7 +285,7 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
     ##  parametric:  FALSE
     ## drop.square:  FALSE
 
-summary(logit_model)
+    summary(logit_model)
 
 {% endhighlight %}
 
