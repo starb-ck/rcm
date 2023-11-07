@@ -15,7 +15,7 @@ footer: 'Follow me on <a href="https://github.com/inkcartrich">github</a>.'
 
 # Build settings
 markdown: kramdown
-remote_theme: b2a3e8/jekyll-theme-console
+remote_theme: inkcartrich/jekyll-theme-console
 
 google_analytics: G-WLW268MS29
 
