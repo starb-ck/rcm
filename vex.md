@@ -4,11 +4,10 @@ layout: page
 permalink: /vex/
 ---
 
+![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="100%"}
+
+
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
-
-
-
-![The Legendary Vex Mythoclast](assets/vexmythoclast/thelegendaryvexmythoclast.jpg){:width="80%"}
 
 
 I've been playing a lot of Destiny 2 lately. It's a fun game in the style of an MMOFPS. You level up, play in 'fireteams' with your friends, and compete in difficult challenges like the player-vs-player (PVP) Crucible or player-vs-enemy (PVE) raids and dungeons.
@@ -151,18 +150,16 @@ The next challenge was to create a DockerFile and image a container, which was a
 
 {% endhighlight %}
 
-
-
-
+ 
 The only unfortunate inefficiency here was that I ended up having to manually adjust `lower_limit` and `upper_limit` for each instance of the script I wanted to create, which was a little tedious. If anyone knows how to pass input values from the host system into a container during its initial spin-up, let me know - I haven't quite gotten that figured out. Still, a few minutes of set-up sets us up with eight `destiny/worker` containers, happily spinning away and scarping.
 
 Here's what my Docker Desktop looked like for about 36 hours:
 
-![Docker Desktop](assets/vexmythoclast/dockerdesktop.png){:width="80%"}
+![Docker Desktop](assets/vexmythoclast/dockerdesktop.png){:width="100%"}
 
 And here's one of the workers chugging away (usernames have been scrubbed for privacy):
 
-![Output from Destiny worker 8](assets/vexmythoclast/outputfromdestinyworker8.png){:width="80%"}
+![Output from Destiny worker 8](assets/vexmythoclast/outputfromdestinyworker8.png){:width="100%"}
 
 One of the nice things about Docker is that the containers mount your hard drive folders as a clone of folders inside the container. This means that you can start running analysis on the data even as it's still in-the-air and updating every few rows. So even before I'd finished the data request, I was already analyzing the incoming Vex Mythoclast data and building my visualizations - including this report!
 
@@ -197,12 +194,10 @@ Here's the last bit of code to get us our completed dataset:
 
 {% endhighlight %}
 
-
-
-
+ 
 First, let's take a look at the response volume by the number of VoG clears:
 
-![Response volume](assets/vexmythoclast/uservogclears.png){:width="80%"}
+![Response volume](assets/vexmythoclast/uservogclears.png){:width="100%"}
 
 I adjusted the axes here to limit us between 0 and 300 VoG clears. Even though the higher outliers are impressive, these limits seem more interesting to me to analyze.
 
@@ -219,7 +214,7 @@ Next, let's take a look at a histogram of the responses with fill color correspo
 
 {% endhighlight %}
 
-![User VoG Clears Histogram](assets/vexmythoclast/uservogclearshisto.png){:width="80%"}
+![User VoG Clears Histogram](assets/vexmythoclast/uservogclearshisto.png){:width="100%"}
 
 Hmm... it's a little hard to see what's going on as the number of VoG clears increases. Let's adjust the histogram position to 'fill':
 
@@ -307,9 +302,7 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
 
 {% endhighlight %}
 
-
-
-
+ 
 Now we get to do some cool stuff by using our model to create a set of Vex Mythoclast possession predictions by VoG clears.
 
 
