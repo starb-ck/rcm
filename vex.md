@@ -219,7 +219,7 @@ Hmm... it's a little hard to see what's going on as the number of VoG clears inc
 {% endhighlight %}
 
 
-![User VoG Clears Histo Full](assets/vexmythoclast/uservogclearshistofull.png){:width="80%"}
+![User VoG Clears Histo Full](assets/vexmythoclast/uservogclearshistofull.png){:width="100%"}
 
 
 That's a bit better. What's interesting is that we seem to see a smooth increase in Vex possession up until around 100 VoG clears, and then the possession rate varies wildly. Let's look a little closer at this by calculating the percentage of Vex possession for a scatter plot against VoG clears:
@@ -240,7 +240,7 @@ That's a bit better. What's interesting is that we seem to see a smooth increase
 {% endhighlight %}
 
 
-![User VoG Clears Scatter](assets/vexmythoclast/uservogclearsscatter.png){:width="80%"}
+![User VoG Clears Scatter](assets/vexmythoclast/uservogclearsscatter.png){:width="100%"}
 
 
 
@@ -296,7 +296,7 @@ Now we get to do some cool stuff by using our model to create a set of Vex Mytho
 
 {% endhighlight %}
 
-![User VoG Clears Model](assets/vexmythoclast/uservogclearsmodel.png){:width="80%"}
+![User VoG Clears Model](assets/vexmythoclast/uservogclearsmodel.png){:width="100%"}
 
 
 This plot shows us the predicted percentage of Vex Mythoclast ownership in the population by the number of a user's VoG clears. Even better, we can ask the model for its prediciton for a player who's completed VoG once by going to the end of the table:
@@ -313,7 +313,7 @@ Which reveals that our model predicts that a single completion of Vault of Glass
 
 Now that we have our model and have thoroughly inspected the Vex Mythoclast dataset, lets finish off by creating a fun ggplot visualization combining what we generated today.
 
-![Vex Possession by VoG Clears](assets/vexmythoclast/vexpossessionbyvogclears.png){:width="75%"}
+![Vex Possession by VoG Clears](assets/vexmythoclast/vexpossessionbyvogclears.png){:width="100%"}
 
 We'll save this plot and use it to post on the subreddit!
 
