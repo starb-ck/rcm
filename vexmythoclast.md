@@ -21,9 +21,9 @@ There are known limitations to both of these prior analyses, primarily due to th
 
 The below analysis applies **u/TBEMystify**'s method at scale. We utilize HTML scraping and GET request tools in R to source approximately 1 million player records for VoG completions. We then take these records and query them against the Bungie API in a containerized application to determine whether or not the player possesses Vex Mythoclast. Finally, we analyze the likelihood that a player possesses Vex Mythoclast given a particular number of VoG completions. We propose that this relationship can be modeled in the second-order form:
 
-$$  y = Ax^n + Bx + C $$
+y = Ax^n + Bx + C
 
-where $y$ is the probability of owning Vex Mythoclast, $x$ is the number of Vault of Glass completions, $A$ and $B$ are unknown coefficients, and $C$ is some arbitrary constant. Below is an in-depth explanation of the methodology for this anlaysis and how this model was determined.
+where y is the probability of owning Vex Mythoclast, x is the number of Vault of Glass completions, A and B are unknown coefficients, and C is some arbitrary constant. Below is an in-depth explanation of the methodology for this anlaysis and how this model was determined.
 
 ## Method
 
