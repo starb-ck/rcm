@@ -1,7 +1,7 @@
 ---
-title: /vexmythoclast
+title: /vex
 layout: page
-permalink: /vexmythoclast/
+permalink: /vex/
 ---
 
 # The Legendary Vex Mythoclast: Containerization for Pseudo-Survival Analysis in R
