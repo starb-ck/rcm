@@ -10,7 +10,7 @@ Welcome to the Simulated Paranormal Observations and Otherworldly Kryptozoologic
 
 ## ENTITY DIRECTORY:
 
-<p id="list"></p>
+<p id="list">Loading...</p>
 
 # SELECTED CASE FILE:
 
