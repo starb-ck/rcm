@@ -9,7 +9,7 @@ categories:
 
 Over the last few days I have been knee deep in Docker compose and exploring the great services available at [awesome-selfhosted](https://awesome-selfhosted.net/). I don't have money to put towards reserving cloud resources these days, so instead I've viewed it as a challenge to learn more about virtual networking and setting up a truly custom development environment.
 
-Cloudflare tunnels (formerly Argo tunnels) have been amazing for this. The website you're currently browsing is hosted by GitHub pages for free, but it's limited to serving static HTML/CSS. I wanted to pack more features into my domain. What I *really* wanted to figure out was to see if I could serve consumable data analytics without opening up ports on my personal network. This would let me host web applications like Shiny dashboards without sacrificing much security posture. Cloudflare's tunneling agent, cloudflared, is perfect for that.
+The website you're currently browsing is hosted by GitHub pages for free, but it's limited to serving static HTML/CSS. I wanted to pack more features into my domain. What I *really* wanted to figure out was to see if I could serve consumable data analytics without opening up ports on my personal network. This would let me host web applications like Shiny dashboards without sacrificing much security posture. Cloudflare's tunneling agent, cloudflared, is perfect for that.
 
 With a little elbow grease (and a lot of DNS troubleshooting), I put together a Docker compose file that stands up the entire asimov@home stack in seconds. It's pretty slick.
 
