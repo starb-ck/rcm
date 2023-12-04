@@ -8,6 +8,6 @@ permalink: /about/
 
 [inkcartrich](https://github.com/inkcartrich) is Carter, a data engineer based out of Orlando, Florida. He likes learning new things, playing catch with his dog, and long walks on the beach. 
 
-Download my [resume](https://drive.google.com/file/d/1jEEwNrj06g25jITR8uL30vc23Z1ZUOYm/view?usp=sharing).
+Download my [resume](/assets/resume/Resume%20-%20Carter%20Richard.pdf).
 
 Send me an [email](mailto:carter@calcifer.cloud).
