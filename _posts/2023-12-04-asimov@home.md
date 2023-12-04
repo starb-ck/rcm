@@ -1,3 +1,4 @@
+---
 layout: post
 title:  "asimov@home"
 date:   2023-12-04 10:15:00 -0500
