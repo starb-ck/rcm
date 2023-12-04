@@ -6,10 +6,7 @@ url: "https://inkcartrich.github.io"
 header_pages:
   - index.md
   - about.md
-  - spooki.md
-  - vex.md
   - projects.md
-  - testgame.html
 
 style: dark
 
