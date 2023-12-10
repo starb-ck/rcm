@@ -9,22 +9,5 @@ categories:
 
 Heya everyone. Just wishing you a merry Christmas and happy holiday season!
 
-         |
-        -+-
-         A
-        /=\            
-      i/ O \i          
-      /=====\       
-      /  i  \      
-    i/ O * O \i      
-    /=========\       
-    /  *   *  \       
-  i/ O   i   O \i      
-  /=============\       
-  /  O   i   O  \      
-i/ *   O   O   * \i
-/=================\
-       |___|
-
 \<3
 -Carter
