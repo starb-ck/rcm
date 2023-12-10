@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hello world!"
+title:  "hello world!"
 date:   2023-11-05 01:00:00 -0500
 categories:
 ---
