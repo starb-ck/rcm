@@ -8,7 +8,7 @@ permalink: /
 
 This is the personal website for [inkcartrich](https://github.com/inkcartrich). 
 
-![A pixel art campfire.](assets/campfire-crop2.gif){:style="display:block; margin-left:auto; margin-right:auto"}
+![A pixel art campfire.](assets/campfire-crop2.gif){:width="100%"}
 
 
 
