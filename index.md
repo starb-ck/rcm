@@ -4,7 +4,7 @@ layout: home
 permalink: /
 ---
 
-![A pixel art campfire.)](assets/campfire-wide.gif){:width="50%"}
+![A pixel art campfire.)](assets/campfire-crop2.gif){:width="50%"}
 
 # Welcome
 
