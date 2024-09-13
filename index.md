@@ -8,7 +8,7 @@ Redcat Media
 
 The best in basement journalism. 
 
-Reporting on technology, data, and the AI age.
+Reporting on technology & data in the AI age.
 
 This website is under construction. 
 
