@@ -4,9 +4,9 @@ layout: home
 permalink: /
 ---
 
-Redcat Media
+<h1>Redcat Media</h1>
 
-The best in basement journalism. 
+<h2>*"The best in basement journalism."*</h2> 
 
 Reporting on technology & data in the AI age.
 
