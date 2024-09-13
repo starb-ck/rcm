@@ -1,22 +1,18 @@
-title: 'inkcartrich.github.io'
-description: "Personal GitHub Pages site."
+title: 'rcm.github.io'
+description: "The best in basement journalism."
 baseurl:
-url: "https://inkcartrich.github.io"
+url: "https://rcm.github.io"
 
 header_pages:
   - index.md
-  - about.md
-  - projects.md
 
 style: dark
 
-footer: 'Follow me on <a href="https://github.com/inkcartrich">github</a>.'
+footer: 'Support the RCM project on <a href="https://github.com/starb-ck">github</a>.'
 
 # Build settings
 markdown: kramdown
 remote_theme:  b2a3e8/jekyll-theme-console
-
-google_analytics: G-WLW268MS29
 
 plugins:
   - jekyll-feed

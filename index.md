@@ -6,7 +6,9 @@ permalink: /
 
 Redcat Media
 
-Providing technology journalism since 2024.
+The best in basement journalism. 
+
+Reporting on technology, data, and the AI age.
 
 This website is under construction. 
 
